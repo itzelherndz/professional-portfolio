@@ -1,63 +1,70 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <title>Itzel Hernandez Portfolio</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <header>
-            <h1>Itzel Hernandez</h1>
-            <p>Portfolio</p> 
-            <nav> 
-                <a href="#about-me">About Me</a>
-                <a href="#work">Work</a>
-                <a href="#contact-me">Contact Me</a>
-            </nav>
-        </header>
-        <main>
-            <section id="about-me" class="about-me">
-                <h2>About Me</h2>
-                <img src="./assets/images/200.png" alt="image placeholder">
-                <p>Something about me</p>
-            </section>
-                
-            <section id="work" class="work">
-                <h2>Work</h2>
-                <a href="https://itzelherndz.github.io/semantic-refactor/" class="large">
-                    <figure>
-                        <img src="./assets/images/programming.png" alt="programming">
-                        <figcaption><h3>Code Refactor</h3><br>HTML & CSS</figcaption>
-                    </figure>
-                </a>
-                <a href="https://itzelherndz.github.io/landing-page/">
-                    <figure>
-                        <img src ="./assets/images/webpage.png" alt="webpage">
-                        <figcaption ><h3>Landing Page</h3><br>HTML & CSS</figcaption>
-                    </figure>
-                </a>
-                <a href="https://itzelherndz.github.io/css-cheat-sheet/">
-                    <figure> 
-                        <img src ="./assets/images/css.png" alt="css">
-                        <figcaption><h3>CSS Cheat Sheet</h3><br>HTML & CSS</figcaption>
-                    </figure>
-                </a>
-            </section>
 
-            <section id="contact-me" class="contact-me">
-                <h2>Contact Me</h2>
-                <ul>
-                    <li id="email"><strong>Email: </strong><a href="itzel.hdz208@gmail.com">itzel.hdz208@gmail.com</a></li>
-                    <li id="phone"><strong>Phone: </strong>(915)-803-9799</li>
-                    <li id="github"><a href="https://github.com/itzelherndz"><strong>GitHub</strong></a></li>
-                    <li id="linked-in"><a href="https://www.linkedin.com/in/itzel-hdz-/"><strong>LinkedIn</strong></a></li>
-                </ul>
+<head>
+    <title>Itzel Hernandez Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/reset.css"> <!--reset stylesheet-->
+    <link rel="stylesheet" href="./assets/css/style.css"> <!--main stylesheet-->
+</head>
+
+<body>
+    <header>
+        <h1>Itzel Hernandez</h1> <!--heading-->
+        <nav> <!--navigation bar-->
+            <a href="#about-me">About Me</a>
+            <a href="#work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me" class="card"> <!--about me card-->
+            <h2>About Me</h2>
+            <section class="content"> <!--content section separates content from header-->
+                <img src="./assets/images/profile-image.png" alt="profile image">
+                <p>I am a web development student with a background in engineering.</p>
             </section>
+        </section>
 
-            <footer>
-                <h4>I.H. Websites</h4>
-            </footer>
+        <section id="work" class="card"> <!--work card-->
+            <h2>Work</h2>
+            <section class="content">
+                <a href="https://itzelherndz.github.io/semantic-refactor/">
+                    <h3>Code Refactor</h3>
+                    <p>HTML/CSS</p>
+                    <img src="./assets/images/programming.png" alt="programming">
+                </a>
+                <section id="small"> <!--small section separates first content card from the rest-->
+                    <a href="https://itzelherndz.github.io/landing-page/">
+                        <h3>Landing Page</h3>
+                        <p>HTML/CSS</p>
+                        <img src="./assets/images/webpage.png" alt="webpage">
+                    </a>
+                    <a href="https://itzelherndz.github.io/css-cheat-sheet/">
+                        <h3>CSS Cheat Sheet</h3>
+                        <p>HTML/CSS</p>
+                        <img src="./assets/images/css.png" alt="css">
+                    </a>
+                </section>
+            </section>
+        </section>
 
-        </main>
-    </body>
+        <section id="contact-me" class="card"> <!--contact me card-->
+            <h2>Contact Me</h2>
+            <ul>
+                <li><strong>Email: </strong><a href="mailto: itzel.hdz208@gmail.com">itzel.hdz208@gmail.com</a></li>
+                <li id="phone"><strong>Phone: </strong>(915) 803-9799</li>
+                <li><a href="https://github.com/itzelherndz"><strong>GitHub</strong></a></li>
+                <li><a href="https://www.linkedin.com/in/itzel-hdz-/"><strong>LinkedIn</strong></a></li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer>
+        <h4>Itzel Hernandez - 2023</h4>
+    </footer>
+</body>
+
 </html>
