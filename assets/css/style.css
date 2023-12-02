@@ -1,0 +1,239 @@
+/* external font */
+@font-face {
+    font-family: 'cutiveregular';
+    src: url('./fonts/webfontkit-cutive/cutive-regular-webfont.woff2') format('woff2'),
+         url('./fonts/webfontkit-cutive/cutive-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    /* color variables */
+    --color-1:#c89595;
+    --color-2:#edd5ba;
+    --color-3:#f1e3d3;
+    --color-4:#99c1b9;
+    --color-5:#b77f7f;
+}
+
+body{
+    background-color:var(--color-3);
+
+    /* text font */
+    font-family:'cutiveregular';
+}
+
+header{
+    height:auto;
+
+    /* flexbox */
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    background-color:var(--color-1);
+
+    /* box model */
+    border-bottom: 2vh solid var(--color-4);
+}
+
+h1{
+    /* box model */
+    padding: 10px;
+
+    /* text properties */
+    font-size:300%;
+    font-weight:bold;
+    color: var(--color-3);
+}
+
+nav{
+    /* flexbox */    
+    display:flex;
+    justify-content:space-between;
+}
+
+nav a{
+    /* box model */
+    padding: 10px;
+    
+    /* text properties */
+    color: var(--color-2);
+    font-size:150%;
+    text-align:center;
+
+    /* transition property */
+    transition: all 0.6s ease-in-out;
+}
+
+nav a:hover{
+    /* text properties */
+    font-weight: bold;
+    color:var(--color-2);
+}
+
+main{
+    /* text properties */
+    color:var(--color-5);
+}
+
+h2{
+    /* text properties */
+    font-weight:bold;
+    font-size:200%;
+}
+
+a[href="https://itzelherndz.github.io/semantic-refactor/"]{
+    /* flexbox */
+    align-items:center;
+}
+
+h3{
+    /* text properties */
+    font-size:150%;
+    font-weight:bold;
+    text-align:center;
+}
+
+p{
+    /* text properties */
+    font-size:125%;
+    text-align:center;
+}
+
+ul{
+    /* box model */
+    margin:2.5vh 0;
+
+    /* flexbox */
+    display:flex;
+    justify-content:space-around;
+}
+
+li{
+    /* box model */
+    padding:2.5vh;
+
+    /* text properties */
+    font-size:125%;
+
+    /* transition property */
+    transition: all 0.6s ease-in-out;
+}
+
+/* transition when hovering over element */
+li:hover, #work a:hover{
+    /* box model */
+    border: 1vh dotted var(--color-4);
+    border-radius:5vh;
+}
+
+strong{
+    /* text property */
+    font-weight:bold;
+}
+
+footer{
+    /* text properties */
+    color:var(--color-3);
+    font-size:125%;
+    font-weight:bold;
+    text-align:center;
+
+    background-color:var(--color-1);
+}
+
+.card{
+    /* box model */
+    padding:1% 2.5%;    
+}
+
+.content{
+    /* flexbox */
+    display:flex;
+    align-items:center;
+}
+
+#about-me .content{
+    /* flexbox */
+    justify-content:space-around;
+
+    /* box model */
+    margin:2.5vh;
+}
+
+#about-me img{
+    /* box model */
+    border-radius: 50%;
+    border: 2.5vh dotted var(--color-4);
+}
+
+#about-me p{
+    /* box model */
+    margin:2.5vh;
+}
+
+#work a{
+    /* box model */
+    padding:0;
+    margin-bottom: 10vh;
+
+    /* transition property */
+    transition: all 0.6s ease-in-out;
+}
+
+#work .content{
+    /* flexbox */
+    justify-content:space-around;
+}
+
+#work img{
+    /* box model */
+    border-radius:5vh;
+}
+
+#small{
+    /* flexbox */
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+/* selects phone number when clicked */
+#phone:active{
+    user-select:all;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 992px){
+    header, #about-me .content{
+        /* flexbox */
+        flex-direction:column;
+    }
+    h1, h2{
+        /* text property */
+        text-align:center;
+    }
+    nav a{
+        /* text property */
+        font-size:150%;
+    }
+    ul{
+        /* flexbox */
+        flex-wrap:wrap;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav, ul, .content{
+        /* flexbox */
+        flex-direction:column;
+    }
+    ul{
+        /* text property */
+        text-align:center;
+    }
+}
