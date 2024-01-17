@@ -84,11 +84,6 @@ h2{
     font-size:200%;
 }
 
-a[href="https://itzelherndz.github.io/semantic-refactor/"]{
-    /* flexbox */
-    align-items:center;
-}
-
 h3{
     /* text properties */
     font-size:150%;
@@ -155,6 +150,19 @@ footer{
     align-items:center;
 }
 
+.small{
+    /* flexbox */
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.large a, .small a{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+} 
+
 #about-me .content{
     /* flexbox */
     justify-content:space-around;
@@ -177,7 +185,7 @@ footer{
 #work a{
     /* box model */
     padding:0;
-    margin-bottom: 10vh;
+    margin: 10vh;
 
     /* transition property */
     transition: all 0.6s ease-in-out;
@@ -186,18 +194,12 @@ footer{
 #work .content{
     /* flexbox */
     justify-content:space-around;
+    flex-wrap:wrap;
 }
 
 #work img{
     /* box model */
     border-radius:5vh;
-}
-
-#small{
-    /* flexbox */
-    display:flex;
-    flex-direction: column;
-    justify-content:space-between;
 }
 
 /* selects phone number when clicked */
